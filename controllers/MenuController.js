@@ -9,6 +9,7 @@ module.exports = class MenuController {
                 message: "Please choose from an option below: ",
                 choices: [
                     "Add new contact",
+                    "Remind me",
                     "Get date",
                     "Exit"
                 ]
@@ -24,6 +25,9 @@ module.exports = class MenuController {
                 case "Add new contact":
                     this.addContact();
                     break;
+                case "Remind me":
+                    this.remindMe();
+                    break;    
                 case "Get date":
                     this.getDate();
                     break;
@@ -56,13 +60,26 @@ module.exports = class MenuController {
     //     this.main();
     // }
 
-    date(){ /* method definition */ }
+    date() { /* method definition */ }
+    getDate() {
+        this.clear();
+        var dd = new Date().toDateString()
+        console.log("Today\s Date: " + dd);
+        this.main();
+    }
 
-    getDate(){
-      this.clear();
-      var dd = new Date().toDateString()
-      console.log("Today\s Date: " + dd);
-      this.main();
+    getContactCount() {
+        //method definition
+        return this.contacts.length;
+    }
+
+    remind() { /* method definition */ }
+    remindMe() {
+        this.clear();
+        var reminder = "Learning is a life-long pursuit"
+        console.log(reminder);
+        this.main();
+        return reminder;
     }
 
     clear() {/* method definition */
@@ -79,5 +96,6 @@ module.exports = class MenuController {
         console.log("Thanks for using AddressBloc!");
         process.exit();
     }
+
 
 }
