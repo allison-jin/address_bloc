@@ -1,0 +1,19 @@
+{
+  "name": "address_bloc",
+  "version": "1.0.0",
+  "description": "An application to model an address book in Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seongyeonjin/address_bloc.git"
+  },
+  "author": "Allison Jin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seongyeonjin/address_bloc/issues"
+  },
+  "homepage": "https://github.com/seongyeonjin/address_bloc#readme"
+}
