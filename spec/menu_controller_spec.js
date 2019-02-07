@@ -7,22 +7,23 @@ describe("MenuController", () => {
       });
 
 
-    describe("#getContactCount()", () => {
+    // describe("#getContactCount()", () => {
 
-        it("should return 0 when no contacts are in the book", () => { 
-            /* spec implementation */ 
-            expect(this.menu.getContactCount()).toBe(0)
-        });
+    //     it("should return 0 when no contacts are in the book", () => { 
+    //         /* spec implementation */ 
+    //         expect(this.menu.getContactCount()).toBe(0)
+    //     });
 
-        it("should return 1 when there is exactly one contact in the book", () => {
-            //const menu = new MenuController();
-            //menu.contacts.push("Bob");
-            //expect(menu.getContactCount()).toBe(1)
-            this.menu.contacts.push("Bob");
-            expect(this.menu.getContactCount()).toBe(1)
-        });
+    //     it("should return 1 when there is exactly one contact in the book", () => {
+    //         //const menu = new MenuController();
+    //         //menu.contacts.push("Bob");
+    //         //expect(menu.getContactCount()).toBe(1)
+    //         //this.menu.contacts.push("Bob");
+    //         this.menu.book.addContact("Bob", "555-555-5555");
+    //         expect(this.menu.getContactCount()).toBe(1)
+    //     });
 
-    });
+    // });
 
     describe("#remindMe()", () => {
 
